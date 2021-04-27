@@ -1,2 +1,2 @@
 # pokedex
-Just a pokedex
+Just a pokedex with CSS and HTML
