@@ -40,3 +40,7 @@
   left: 62%;
   top: -20px;
 }
+
+.main__pokemonContainer {
+  margin: 42px 25px 0px;
+}
