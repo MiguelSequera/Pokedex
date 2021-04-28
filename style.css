@@ -21,14 +21,14 @@
 }
 
 .header__container h1 {
-  width: 318px;
-  height: 33px;
   font-size: 2.4rem;
+  color: white;
 }
 
 .header__container p {
-  margin-top: 14px;
+  padding-top: 14px;
   font-size: 1.6rem;
+  color: white;
 }
 
 .main__contianer {
@@ -74,11 +74,10 @@
 
 .main__pokemonContainer {
   display: grid;
-  grid-template-rows: repeat(3, 199px);
-  grid-template-columns: repeat(auto-fill, 152px);
+  grid-template-columns: repeat(auto-fit, 152px);
   justify-content: center;
   grid-gap: 25px;
-  margin-top: 25px;
+  margin: 25px 25px 0px;
 }
 
 .main--pokemon figure {
@@ -113,4 +112,6 @@
   margin: 0 auto;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 5px;
+  margin-bottom: 76px;
+  margin-top: 49px;
 }
