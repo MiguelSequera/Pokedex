@@ -20,7 +20,7 @@ fetchData (APIURL)
           const mainPokemon = document.createElement ('div');
           mainPokemon.classList.add ('main--pokemon');
 
-          const  pokemonFigure = document.createElement ('fig');
+          const  pokemonFigure = document.createElement ('figure');
           const  pokemonImg = document.createElement ('img');
           pokemonImg.setAttribute ('alt','Pokemon')
           pokemonImg.setAttribute ('src', pokeImg)
@@ -28,7 +28,9 @@ fetchData (APIURL)
           const pokemonName = document.createElement ('p');
           pokemonName.innerText = pokeName;
           
-          mainPokemonContainer.append(mainPokemon, pokemonFigure, pokemonImg, pokemonName);
+          pokemonFigure.append (pokemonImg, pokemonName);
+          mainPokemon.append (pokemonFigure);
+          mainPokemonContainer.append(mainPokemon);
         })
     }
   })
