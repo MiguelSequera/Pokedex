@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="desktop.css" media="(min-width: 750px)" />
@@ -14,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <section class="header__container">
       <h1>Welcome to your Pokedex!</h1>
       <p>
@@ -23,19 +22,21 @@
       </p>
     </section>
   </header>
-  <main class="main">
+  <main class="main" id="main">
     <section class="main__contianer">
-      <input placeholder="Pokemon name" class="main--search" type="search" name="" id="" />
-      <button class="main--button">ADD POKEMON</button>
+      <input placeholder="Pokemon name" class="main--search" type="text" id="mainInput" />
+      <ul class="autocomplete__list" id="autocompleteList">
+      </ul>
+      <button class="main--button" id="mainButton" type="button">SEARCH</button>
       <section class="main__pokemonContainer">
       </section>
     </section>
   </main>
-  <footer class="footer">
-    <button type="reset">CLEAR LIST</button>
+  <footer class="footer" id="footer">
+    <button id="resetButton">CLEAR LIST</button>
   </footer>
 </body>
 
-<script src="./main.js"></script>
+<script src="./main2.js"></script>
 
 </html>

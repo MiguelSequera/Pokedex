@@ -1,3 +1,7 @@
+.inactive {
+  display: none;
+}
+
 .header__container h1 {
   font-size: 3.6rem;
 }
@@ -8,6 +12,10 @@
 
 .header__container p br {
   display: none;
+}
+
+.main__pokemonContainer {
+  margin: 42px 25px 0px;
 }
 
 .main--search {
@@ -22,6 +30,12 @@
   left: 29%;
   top: -20px;
   padding-left: 13px;
+  font-size: 2rem;
+}
+
+.autocomplete__list {
+  width: 30%;
+  left: 29%;
 }
 
 .main--button {
@@ -34,13 +48,9 @@
   background-color: white;
   border: none;
   color: #a00800;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   position: absolute;
   left: 62%;
   top: -20px;
-}
-
-.main__pokemonContainer {
-  margin: 42px 25px 0px;
 }
